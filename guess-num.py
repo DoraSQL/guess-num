@@ -9,11 +9,13 @@ import random
 r = random.randint(1,100) 
 print(r)
 
+count=0
 while True:
     num = input('請輸入數字玩猜猜樂歐~')
     num = int(num)
+    count = count + 1 #統計猜惹幾次
     if num == r:
-        print('終於猜對惹')
+        print('終於猜對惹 ^.^ ', '你共猜惹', count, '次')
         break
             # break
             # 在單獨只有if的statement裡面不能用break中斷程式
@@ -26,3 +28,4 @@ while True:
         print('再猜小一點')
     else:
         print('再猜大一點')
+    print('這是你猜的第', count, '次')
