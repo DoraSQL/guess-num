@@ -6,8 +6,15 @@
 # 猜錯的話 要告訴他 比答案大/小
 
 import random
-r = random.randint(1,100) 
-print(r)
+x = input('請決定隨機數字範圍開始值')
+y = input('請決定隨機數字範圍結束值')
+print('開始值是', x, ';' , '結束值是', y)
+x=int(x)
+y=int(y)
+
+r = random.randint(x, y) 
+#r = random.randint(1,100) 
+print('**答案是: ', r)
 
 count=0
 while True:
